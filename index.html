@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>J, Ruben Gomez | Computational Social Science</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>J. Ruben Gomez | Computational Social Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -13,22 +14,65 @@
       color: #111;
       line-height: 1.6;
     }
-    h1, h2 {
+
+    h1, h2, h3 {
       font-weight: 600;
       margin-top: 1.6em;
+      line-height: 1.25;
     }
+
     a {
       color: #005cc5;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
+
+    nav p { margin: 0.6em 0 0; }
+
     .project {
-      margin-bottom: 28px;
+      margin: 28px 0 34px;
+      padding-top: 6px;
+      border-top: 1px solid #eee;
     }
+
     .tools {
       color: #555;
+      font-size: 0.95em;
+      margin-top: 8px;
+    }
+
+    .meta {
+      color: #444;
+      font-size: 0.98em;
+      margin: 6px 0 10px;
+    }
+
+    figure {
+      margin: 14px 0 18px;
+      padding: 12px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    ul { padding-left: 18px; }
+    li { margin: 6px 0; }
+
+    .note {
+      color: #444;
       font-size: 0.95em;
     }
   </style>
@@ -36,113 +80,294 @@
 
 <body>
 
-<h1>Hi! I'm J. Ruben Gomez</h1>
+<header>
+  <h1>Hi! I’m J. Ruben Gomez</h1>
 
-
-<h2> About Me</h2>
+  <h2>About Me</h2>
+  <p>
+  I am a graduate researcher in computational social science studying how
+  misinformation, narrative dynamics, and algorithmic systems shape belief,
+  behavior, and collective outcomes in online and IRL communities globally.
+  </p>
+      
+  <p>My work sits at the intersection of:</p>
+    <ul>
+      <li>Misinformation &amp; narrative dynamics</li>
+      <li>Algorithmic mediation and human agency</li>
+      <li>Analysis of large-scale behavioral data</li>
+      <li>Human-centered AI design</li>
+    </ul>
   
-<p>
-I am a graduate researcher in computational social science studying how
-misinformation, narrative dynamics, and algorithmic systems shape belief,
-behavior, and collective outcomes in online communities.
+  <p>
+    Across my research, I aim to uncover upstream mechanisms of persuasion,
+    alienation, and narrative reinforcement-and to identify opportunities for
+    designing technology that advances huamnity and better serves human agency and dignity.
+  </p>
+      
+  <p>  
+    Prior to graduate study, I spent over seven years leading work researching 
+    Trust &amp; Safety and Platform Integrity roles at Reddit and Twitter (X),
+    where I worked on misinformation detection, abusive content,
+    election integrity, and human-centered reporting systems at global scale.
+    This experience grounded my academic work in real-world constraints and
+    ethical tradeoffs, and continues to inform my approach to research as
+    something that must translate into practical, humane interventions.
+  </p>
+      
+  <p>  
+    At UC Berkeley, my research includes panel-data modeling of online
+    influence and financial behavior, topic modeling and LLM analysis of
+    political discourse, and identity-conditioned experiments examining how
+    generative models respond to users experiencing alienation or grievance.
+    Across these projects, I am motivated by a central question: **how can we
+    design digital and physical systems that improve humankind 10, 20, and 30+ 
+    years into the future?**
+  </p>
+  
+  <nav aria-label="Primary">
+    <p>
+      <a href="https://github.com/jrubengomez">GitHub</a> ·
+      <a href="cv.pdf">CV (PDF)</a> ·
+      <a href="mailto:jrgomez1231@berkeley.edu">Contact</a> ·
+      <a href="https://www.linkedin.com/in/jrubengomez">LinkedIn</a>
+    </p>
+  </nav>  
+</header>
 
-<p>
-My work sits at the intersection of statistical modeling, NLP, and
-LLM-based analysis, with a focus on understanding *how* sociotechnical
-systems influence sensemaking, trust, and vulnerability rather than
-treating harmful behavior as a purely technical classification problem.
-Across my research, I aim to uncover upstream mechanisms of persuasion,
-alienation, and narrative reinforcement-and to identify opportunities for
-designing technology that better serves human agency and dignity.
+<section>
+  <h2> How to Read This Site</h2>
+  
+  <p>Each project answers three questions:</p>
+  <ol>
+    <li>1. What is the social problem?</li>
+    <li>2. What computational method did I use to study it?</li>
+    <li>3. What does this imply for the design of better systems?</li>
+  </ol>
+ 
+  <p>I encourage readers to focus less on the code itself and more on:</p>
+  <ul>
+      <li>· the questions being asked</li>
+      <li>· the assumptions embedded in the models</li>
+      <li>· and the design implications that follow</li>
+  </ul>
+  <p class="note">
+   Note: As with any project, I worked with a small and diverse team of like-minded makers and researchers. 
+  </p>
+</section>
 
-<p>  
-Prior to graduate study, I spent over seven years leading work researching 
-Trust & Safety and Platform Integrity roles at Reddit and Twitter (X),
-where I worked on misinformation detection, abusive content,
-election integrity, and human-centered reporting systems at global scale.
-This experience grounded my academic work in real-world constraints and
-ethical tradeoffs, and continues to inform my approach to research as
-something that must translate into practical, humane interventions.
+<section>
+  <h2>Selected Projects</h2>
 
-<p>  
-At UC Berkeley, my current research includes panel-data modeling of online
-influence and financial behavior, topic modeling and LLM analysis of
-political discourse, and identity-conditioned experiments examining how
-generative models respond to users experiencing alienation or grievance.
-Across these projects, I am motivated by a central question: **how can we
-design digital and physical systems that improve humankind 10, 20, and 30 
-years into the future and beyond?**
+<!----Project 1--->
+<div class="project">
+  <h3>Detecting Misinformation in Political Subreddits</h3>
+
+  <p>
+    I analyzed thousands of posts and comments from large political subreddits to understand how 
+    misinformation spreads, clusters, and engages communities.
+  </p>
+  
+  <p>Using topic modeling (BERTopic), sentiment analysis (VADER), and engagement metrics, I examined:</p>
+  <ul>
+    <li>· Which narratives gain traction</li>
+    <li>· How emotional tone affects participation</li>
+    <li>· Where misinformation concentrates across communities</li>
+  </ul>
+
+  <p>
+    <strong>Why this matters now and in the future:</strong>This work helps identify structural vulnerabilities 
+    in online discourse and the kinds of conditions that allow extreme or misleading narratives to dominate conversation.
+  </p>
+
+  <p>
+    <strong>How to read this project:</strong> Please consider focusing on the research design and interpretation, not just the models. 
+    The key contribution is showing how computational tools can surface early warning signals for discourse breakdown.
+  </p>
+
+  <p>
+    <a href="https://github.com/rgomez-ucb/misinfo_rddt.git">GitHub Repository</a>
+  </p>
+  
+  <!-- Chart slot 1-->
+  <figure>
+    <img src="images/misinfo_activity_timeseries.png"
+       alt="Total posts and comments by year in r/PoliticalDiscussion"
+       loading="lazy" />
+    <figcaption>
+      <strong>Political discussion volume is event-driven, not constant.</strong>
+      Activity spikes around major societal shocks (elections, COVID-19), creating
+      conditions where misinformation and contested narratives are more likely to spread.
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/misinfo_polarizing_topics.png"
+         alt="Most polarizing topics by standard deviation of VADER sentiment"
+         loading="lazy" />
+    <figcaption>
+      <strong>Polarization reflects disagreement, not just negativity.</strong>
+      Topics with high emotional variance contain both positive and negative reactions,
+      signaling contested meaning-making rather than uniform hostility which is a a hallmark of
+      misinformation vulnerability.
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/misinfo_high_risk_comments.png"
+         alt="Top misinformation-labeled comments with narrative and sentiment scores"
+         loading="lazy" />
+    <figcaption>
+      <strong>High-risk misinformation blends narrative structure with negative emotion.</strong>
+      LLM-labeled comments combine strong narrative framing with highly negative sentiment,
+      making them persuasive rather than merely toxic.
+    </figcaption>
+  </figure>
+
+
+  <p class="meta"><strong> Relevant to:</strong> Center for Constructive Communication · Social Algorithms </p>
+  <p class="tools">Python · BERTopic · VADER · pandas · VSCode · Git </p>
+  
+</div>
+
+<!--Project 2-->
+<div class="project">
+  <h3>Behavioral Signals and Market Narratives</h3>
+  
+  <p>
+    An attempt to create a model that predicts online financial influencers a.k.a "Finfluencers" effects on retail tradining behaviors. 
+    Using multiple swaths of data and panel OLS, I studied how online sentiment and financial influencer (aka "Finfluencers") 
+    narratives relate to real-world behavior (e.g., trading volume).
+  <p>
+  
+  <p>This work combines:</p>
+    <ul>
+      <li>· Panel regression and event-study logic</li>
+      <li>· Careful variable construction</li>
+      <li>· Interpretation over prediction</li>
+    </ul>
+
+  <p>
+    <strong>Why this matters:</strong>It shows how algorithmically amplified narratives can spill into offline economic behavior and why platforms should be treated as behavior-shaping systems, not neutral pipes.
+  </p>
+
+  <p>
+    <a href="https://github.com/rgomez-ucb/finfluencers-retail-trading-stats.git">GitHub Repository</a>
+  </p>
+  
+<!-- Chart slot 2-->
+  <figure>
+    <img src="images/finfluencer_correlation_matrix.png"
+       alt="Correlation matrix of independent variables in finfluencer model"
+       loading="lazy" />
+    <figcaption>
+      <strong>Independent variables capture distinct signals.</strong>
+      Low to moderate correlations indicate limited multicollinearity and support
+      interpreting narrative, attention, and market variables as separate mechanisms.
+    </figcaption>
+</figure>
+
+<figure>
+  <img src="images/finfluencer_panel_ols_results.png"
+      alt="Panel OLS regression results for finfluencer narrative model"
+      loading="lazy" />
+  <figcaption>
+    <strong>Narrative sentiment predicts behavior net of market fundamentals.</strong>
+    Lagged sentiment remains statistically significant after controlling for volatility,
+    returns, macro conditions, and event effects, while raw attention alone does not.
+  </figcaption>
+</figure>
+
+<p class="note">
+  Together, these results suggest that online financial influence operates less through
+  sheer attention volume and more through narrative framing layered on top of market
+  conditions.
 </p>
 
-<nav>
-  <p>
-    <a href="https://github.com/jrubengomez">GitHub</a> ·
-    <a href="cv.pdf">CV (PDF)</a> ·
-    <a href="mailto:jrgomez1231@berkeley.edu">Contact</a> ·
-    <a href="https://www.linkedin.com/in/jrubengomez">LinkedIn</a>·
-  </p>
-</nav>  
+<p class="meta"><strong>Relevant to:</strong> Center for Constructive Communication · Social Algorithms </p>
+<p class="tools">Python · PanelOLS · R</p>
 
-<h2>Selected Projects</h2>
-
-<div class="project">
-  <strong>Detecting Misinformation in Political Subreddits</strong>
-  <p>
-  Analyzed posts and comments from r/PoliticalDiscussion to identify latent
-  misinformation narratives and engagement patterns using topic modeling
-  and sentiment analysis.
-  </p>
-  <p class="tools">
-  Python · BERTopic · VADER · pandas · VSCode · Git 
-  </p>
-  <a href="https://github.com/rgomez-ucb/misinfo_rddt.git">GitHub Repository</a>
+</p>
 </div>
 
+<--Project 3-->
 <div class="project">
-  <strong>Narrative Polarization and Market Behavior</strong>
+  <h3>LLM Archetypes and Online Radicalization</h3>
+  
   <p>
-  An attempt to create a model that predicts online financial influencers a.k.a "Finfluencers" effects on retail tradining behaviors. 
-  Panel regression analysis examining how sentiment shocks
-  and influencer narratives predict trading volume in stock tradining.
+    In this project, I created synthetic user identities and posed advice-seeking questions to 
+    large language models to study how responses change based on gender, geography, and identity cues.
   </p>
+
+  <p>Using Python, Jupyter notebooks, Huggingface API, this work explores:</p>
+    <ul>
+      <li>· How models implicitly reason about users</li>
+      <li>· Where bias and narrative framing emerge</li>
+      <li>· How AI systems may reinforce or redirect vulnerable worldviews</li>
+    </ul>
+
+  <p>
+    <strong>Why this matters</strong>: If AI systems are becoming everyday advisors, their interaction design and narrative framing have real consequences for identity, trust, and agency.
+  </p>
+
+  <p>
+    <a href="https://github.com/rgomez-ucb/llm-radicalization-archetypes.git">GitHub Repository</a>
+  </p>
+  <p>
+    Please consider reading this study as an exploratory design probe less about prediction accuracy, more about understanding model behavior and its downstream social impact.
+  </p>
+  
+  <!-- Chart slot 3-->
+  <figure>
+    <img src="images/llm_common_words_across_identities.png"
+       alt="Sample of Most common words in LLM responses across identity-conditioned prompts"
+       loading="lazy" />
+    <figcaption>
+      <strong>LLM responses emphasize emotion and identity across user archetypes.</strong>
+      Common language across identity-conditioned prompts clusters around emotion,
+      identity markers, and normative framing, suggesting convergence toward affective
+      narratives when responding to vulnerable users.
+    </figcaption>
+  </figure>
+  
+  <p class="note">
+    This pattern motivates deeper analysis of how narrative framing, rather than explicit
+    instruction, may shape user interpretation and downstream belief formation.
+  </p>
+  
+  <p class="meta"><strong>Relevant to:</strong> Fluid Interfaces · Center for Constructive Communication · Social Algorithms </p>
+  
   <p class="tools">
-  Python · PanelOLS · R
+    Python · APIs · HuggingFace · Pandas · LLMs
   </p>
-  <a href="https://github.com/rgomez-ucb/finfluencers-retail-trading-stats.git">GitHub Repository</a>
 </div>
 
-<div class="project">
-  <strong>LLM Archetypes and Online Radicalization</strong>
-  <p>
-  project explores how large language models respond to advice-seeking
-  questions when conditioned on different identity archetypes that are
-  theoretically susceptible to online radicalization and grievance-based
-  online narratives.
-  </p>
-  <p class="tools">
-  Python · APIs · HuggingFace · Pandas · LLMs
-  </p>
-  <a href="https://github.com/rubengomez/REPO_NAME">GitHub Repository</a>
-</div>
-
+<section>
 <h2>Research Interests</h2>
+  <ul>
+    <li>Computational social science</li>
+    <li>Misinformation and narrative dynamics</li>
+    <li>LLMs, identity, and vulnerability</li>
+    <li>Creating tech that advances humankind not hurts it</li>
+  </ul>
+</section>
+
+<section>
+<h2>Selected Impact &amp; Public Use</h2>
+
+<p>
+  Some of my research and applied work has informed platform safety features and
+  public-facing interventions, including:
+</p>
+
 <ul>
-  <li>Computational social science</li>
-  <li>Misinformation and narrative dynamics</li>
-  <li>LLMs, identity, and vulnerability</li>
-  <li>Creating tech that advances humankind not hurts it</li>
+  <li><a href="cv.pdf">CV (PDF)</a></li>
+  <li><a href="https://techcrunch.com/2022/02/15/twitter-expands-access-to-anti-abuse-tool-safety-mode-adds-prompts-to-enable-it/">Twitter Launches Beta Test of Anti-Abuse Tool “Safety Mode”</a></li>
+  <li><a href="https://apnews.com/article/technology-business-media-social-media-misinformation-ae496a53fbc761146627fa534cb2f8d9">Twitter Rolls Out Redesigned Misinformation Warning Labels</a></li>
+  <li><a href="https://www.wsj.com/tech/twitter-says-labels-and-warnings-slowed-spread-of-false-election-claims-11605214925">Twitter Says Labels and Warnings Slowed Spread of False Election Claims</a></li>
+  <li><a href="https://blog.x.com/common-thread/en/topics/stories/2021/twitters-new-reporting-process-centers-on-a-human-first-design">Twitter’s New Reporting Process Centers on Human-First Design</a></li>
 </ul>
-
-<h2>Selected Impact & Public Use</h2>
-
-My research and applied work has informed platform safety features and
-public-facing interventions, including:
-
-- <a href="cv.pdf">CV (PDF)</a> ·
-- <a href="https://techcrunch.com/2022/02/15/twitter-expands-access-to-anti-abuse-tool-safety-mode-adds-prompts-to-enable-it/">Twitter Launches Beta Test of Anti-Abuse Tool “Safety Mode”</a>
-- <a href="https://apnews.com/article/technology-business-media-social-media-misinformation-ae496a53fbc761146627fa534cb2f8d9">Twitter Rolls Out Redesigned Misinformation Warning Labels</a>
-- <a href="https://www.wsj.com/tech/twitter-says-labels-and-warnings-slowed-spread-of-false-election-claims-11605214925">Twitter Says Labels and Warnings Slowed Spread of False Election Claims</a>
-- <a href="https://blog.x.com/common-thread/en/topics/stories/2021/twitters-new-reporting-process-centers-on-a-human-first-design">Twitter’s New Reporting Process Centers on Human-First Design</a>
-
+  
+  
+</section>
 </body>
 </html>
